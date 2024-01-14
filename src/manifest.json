@@ -4,24 +4,21 @@
   "version": "0.0.0",
   "description": "Improve your YouTube experience by cleaning the UI and adding new features (like a more quick to use picture in picture button)",
   "icons": {
-    "128": "src/assets/favicon.png"
+    "128": "/assets/favicon.png"
   },
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["src/index.js"],
-      "css": ["src/styles/styles.css", "src/styles/header.css"],
+      "js": ["home.js"],
       "exclude_matches": ["https://www.youtube.com/@*"]
     },
     {
       "matches": ["https://www.youtube.com/@*"],
-      "js": ["src/index.js"],
-      "css": ["src/styles/styles.css"]
+      "js": ["profile.js"]
     },
     {
       "matches": ["https://www.youtube.com/watch*"],
-      "js": ["src/watch/index.js"],
-      "css": ["src/styles/pip.css"]
+      "js": ["watch.js"]
     }
   ]
 }

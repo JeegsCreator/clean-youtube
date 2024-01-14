@@ -18,7 +18,7 @@
 }
 
 
-.pip-parent #pip-button {
+.pip-parent:hover #pip-button {
   top: 8px;
   opacity: .75;
 }

@@ -1,4 +1,4 @@
-const cleanVisuals = () => {
+export const cleanVisuals = () => {
   const contentContainer = document.getElementById("contentContainer")
 
   if(contentContainer) {
@@ -20,10 +20,3 @@ const guide = document.getElementById("guide")
     document.title = newTitle
   }
 }
-
-cleanVisuals()
-console.log("Avocado")
-window.addEventListener("load", () => {
-    cleanVisuals()
-    setInterval(cleanVisuals, 1500)
-})
