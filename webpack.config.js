@@ -12,7 +12,7 @@ module.exports = {
     watch: "./src/routes/watch/index.js",
   },
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
   },
   resolve: {

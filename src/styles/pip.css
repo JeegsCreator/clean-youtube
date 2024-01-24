@@ -9,7 +9,7 @@
   top: -20px;
   opacity: 0;
   left: calc(50% - 20px);
-  transition: all .3s;
+  transition: all 0.3s;
   cursor: pointer;
   display: grid;
   place-content: center;
@@ -17,8 +17,24 @@
   color: #fff;
 }
 
-
 .pip-parent:hover #pip-button {
-  top: 8px;
-  opacity: .75;
+  animation: showButton 4s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showButton {
+  10% {
+    top: 8px;
+    opacity: 0.75;
+  }
+
+  90% {
+    top: 8px;
+    opacity: 0.75;
+  }
+
+  100% {
+    top: -20px;
+    opacity: 0;
+  }
 }

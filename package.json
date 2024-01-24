@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf build && webpack",
-    "build:move": "rm -rf build && webpack && cp build -r /mnt/c/Users/ASUS/Desktop/"
+    "build:move": "rm -rf dist && webpack && cp dist -r /mnt/c/Users/ASUS/Documents/clean-youtube"
   },
   "keywords": [],
   "author": "",

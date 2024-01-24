@@ -1,16 +1,17 @@
-html[dark], [dark] {
+html[dark],
+[dark] {
   --yt-spec-base-background: #020202 !important;
 }
 
-#country-code, 
+#country-code,
 #logo-icon svg > g:nth-child(2),
 #buttons #icon,
 #buttons #tooltip,
 #buttons #button,
 #contents.ytd-rich-shelf-renderer,
+ytd-reel-shelf-renderer,
 #endpoint[title="Shorts"],
 #endpoint[title="YouTube Music"],
-#guide-button
-{
+#guide-button {
   display: none !important;
 }
