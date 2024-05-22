@@ -7,7 +7,8 @@ export const cleanVisuals = () => {
   contentContainer.removeAttribute("persistent")
   }
 
-const guide = document.getElementById("guide")
+  const guide = document.getElementById("guide")
+
   if (guide) {
     guide.removeAttribute("opened")
   guide.removeAttribute("swipe-open")
@@ -18,5 +19,14 @@ const guide = document.getElementById("guide")
   
   if (newTitle) {
     document.title = newTitle
+  }
+
+  const isProfile = window.location.href.includes('youtube.com/@')
+  if (!isProfile) {
+    const $$headers = document.querySelectorAll('#header')
+    
+    $$headers.forEach($h => {
+       $h.style = 'display: none;'
+    })
   }
 }

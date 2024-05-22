@@ -4,7 +4,8 @@
   "description": "Improve your YouTube experience by cleaning the UI and adding new features.",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf build && webpack",
+    "build": "rm -rf dist && webpack",
+    "build:dev": "rm -rf dist && webpack --mode=development",
     "build:move": "rm -rf dist && webpack && cp dist -r /mnt/c/Users/ASUS/Documents/clean-youtube"
   },
   "keywords": [],
