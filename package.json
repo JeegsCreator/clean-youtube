@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf dist && webpack",
     "build:dev": "rm -rf dist && webpack --mode=development",
-    "build:move": "rm -rf dist && webpack && cp dist -r /mnt/c/Users/ASUS/Documents/clean-youtube"
+    "build:move": "rm -rf dist && webpack && cp dist -r /mnt/c/Users/Jeegs/Documents/clean-youtube"
   },
   "keywords": [],
   "author": "",

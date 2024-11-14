@@ -1,32 +1,33 @@
 export const cleanVisuals = () => {
-  const contentContainer = document.getElementById("contentContainer")
+  const contentContainer = document.getElementById("contentContainer");
 
-  if(contentContainer) {
-    contentContainer.removeAttribute("opened")
-  contentContainer.removeAttribute("swipe-open")
-  contentContainer.removeAttribute("persistent")
+  if (contentContainer) {
+    contentContainer.removeAttribute("opened");
+    contentContainer.removeAttribute("swipe-open");
+    contentContainer.removeAttribute("persistent");
   }
 
-  const guide = document.getElementById("guide")
+  const guide = document.getElementById("guide");
 
   if (guide) {
-    guide.removeAttribute("opened")
-  guide.removeAttribute("swipe-open")
-  guide.removeAttribute("persistent")
+    guide.removeAttribute("opened");
+    guide.removeAttribute("swipe-open");
+    guide.removeAttribute("persistent");
   }
 
-  const newTitle = document.title.split(") ")[1]
-  
+  const newTitle = document.title.split(") ")[1];
+
   if (newTitle) {
-    document.title = newTitle
+    document.title = newTitle;
   }
 
-  const isProfile = window.location.href.includes('youtube.com/@')
-  if (!isProfile) {
-    const $$headers = document.querySelectorAll('#header')
-    
-    $$headers.forEach($h => {
-       $h.style = 'display: none;'
-    })
+  const isHome = window.location.href === "https://www.youtube.com/";
+
+  if (isHome) {
+    const $$headers = document.querySelectorAll("#header");
+
+    $$headers.forEach(($h) => {
+      $h.style = "display: none;";
+    });
   }
-}
+};
